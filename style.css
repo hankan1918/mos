@@ -1,0 +1,49 @@
+html, body{
+    align-items: center;
+    background-color: #836B4F;
+    color: #594F4C;
+    justify-content: center;
+}
+
+textarea {
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    resize: none;
+    font-size:15px;
+    width: 80%;
+}
+
+.card {
+    background-color: #B6A081;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    background-color: #9D8566;
+    padding: 30px;
+}
+
+.banner{
+    margin: 20px;
+    padding: 30px;
+}
+
+.fontSizer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90px;
+}
+
+.volume {
+    width: 30px;
+    height: 30px;
+}

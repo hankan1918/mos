@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner card">
+        <h1>MOS CODE TRANSLATER</h1>
+        <h3>모스 부호를 입력해서 영어로 번역합니다!</h2>
+    </div>
+    <div class="main">
+        <form class="client card">
+            <h1>모스부호</h1>
+            <textarea id="input" cols="30" rows="10" placeholder="Enter MosCode" onkeypress="checkReturn()"></textarea>
+            <br/>
+            <input id="submit" type="submit" value="Enter">
+        </form>
+        <div class="provide card">
+            <h1>영어</h1>
+            <textarea id="result" cols="30" rows="10" placeholder="Result Here!"></textarea>
+        </div>
+    </div>
+    <div class="fontSizer card">
+        <input class="volume" type="button" value="-">
+        <p>15</p>
+        <input class="volume" type="button" value="+">
+    </div>
+    <div class="notice card">
+        <p>단: . / 장: - 으로 입력해주세요</p>
+        <p>띄어쓰기로 구분합니다.</p>
+    </div>
+    <script src="scripts/mos.js"></script>
+    <script src="scripts/align.js"></script>
+    <script src="scripts/volume.js"></script>
+</body>
+</html>

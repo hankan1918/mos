@@ -31,9 +31,6 @@ const code = [
     "--..",
 ];
 
-
-
-
 function translate(){
     event.preventDefault()
     var mos = input.value;
@@ -43,14 +40,14 @@ function translate(){
     splitMos.forEach(m => {
         
         idx = code.indexOf(m)
+
+        console.log(idx);
         
         if(idx > -1){
-            console.log('B');
             result.value = result.value + String.fromCharCode(idx+97);
         }
-        if(idx == 96 && (m=="" || m==" ")){
-            console.log('A');
-            result.value = result.value + m;
+        else if(m==''){
+            result.value = result.value + ' ';
         }
     });
     if(result.value == '')

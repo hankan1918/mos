@@ -1,14 +1,35 @@
+@font-face {
+    font-family: 'KartriderExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KartriderExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    /* display: none; */
+}
+
 html, body{
     align-items: center;
     background-color: #836B4F;
     color: #594F4C;
     justify-content: center;
+    font-family: 'HakgyoansimWoojuR';
+
 }
 
 textarea {
     border: none;
     border-radius: 15px;
     margin: 20px;
+    margin-top: 0px;
     padding: 20px;
     resize: none;
     font-size:15px;
@@ -20,8 +41,6 @@ textarea {
     text-align: center;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .main {
@@ -35,12 +54,25 @@ textarea {
 .banner{
     margin: 20px;
     padding: 30px;
+    padding-bottom: 15px;
+    justify-content: center;
 }
+
+h1 {
+    font-family: 'KartriderExtraBold';
+    font-size: 5em;
+    margin: 0.3em;
+}
+
+.toolbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+}
+
 
 .fontSizer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 90px;
 }
 
 .volume {
@@ -49,8 +81,4 @@ textarea {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.219);
     width: 30px;
     height: 30px;
-}
-
-.banner {
-    justify-content: center;
 }

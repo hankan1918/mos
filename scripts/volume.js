@@ -1,3 +1,5 @@
+// Adjust Font Size
+
 const vButton = document.getElementsByClassName("volume");
 const up = vButton[1];
 const down = vButton[0];
@@ -28,7 +30,7 @@ down.addEventListener("click", function(){
 
 volume = Number(localStorage.getItem("volume"));
 
-console.log(volume);
+// console.log(volume);
 
 if(volume == 0){
     localStorage.setItem('volume', String(dvolume));

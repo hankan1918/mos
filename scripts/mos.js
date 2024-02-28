@@ -1,3 +1,5 @@
+// Morse Code Translate
+
 const client = document.querySelector(".client");
 const input = document.querySelector("#input");
 const result = document.querySelector("#result");

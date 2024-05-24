@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner card">
-        <h1>MORSE CODE TRANSLATER</h1>
-        <h3>모스 부호를 입력해서 영어로 번역합니다!</h3>
-        <div class="toolbar card">
-            <div class="fontSizer">
-                <input class="volume" type="button" value="-">
-                <p id="numPad"></p>
-                <input class="volume" type="button" value="+">
-            </div>
-            <input class="showMorseTable" type="button" value="Show Morse Table">
+    <header class="card">
+        <h1>모스 부호 번역기</h1>
+        <h3>모스 부호를 입력하면 영어로 번역됩니다!</h3>
+        <div id="hamburger" class="closed" onclick="hamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-    </div>
+    </header>
+    <aside>
+        <h1>설정</h1>
+        <h3>글자 크기</h3>
+        <div class="fontSizer">
+            <input class="volume" type="button" value="-">
+            <p id="numPad"></p>
+            <input class="volume" type="button" value="+">
+        </div>
+        <h3>모스 부호표</h3>
+        <div id="morseTable"></div>
+    </aside>
     <div class="main">
         <form class="client card">
             <h2>모스부호</h2>
@@ -31,13 +39,14 @@
             <textarea id="result" cols="20" rows="20" placeholder="Result Here!"></textarea>
         </div>
     </div>
-    <div class="notice card">
+    <footer class="notice card">
         <p>단: . / 장: - 으로 입력해주세요</p>
         <p>띄어쓰기로 구분합니다.</p>
-    </div>
+    </footer>
     <script src="scripts/mos.js"></script>
     <script src="scripts/volume.js"></script>
     <script src="scripts/morseTable.js"></script>
     <script src="scripts/theme.js"></script>
+    <script src="scripts/side.js"></script>
 </body>
 </html>

@@ -34,20 +34,8 @@ function generateTable(){
 
     morseTable.style.border = 'solid';
     morseTable.classList.add("morseTable");
-    morseTable.classList.add("hidden");
     morseTable.style.width = 100*loop + "px";
-    document.body.appendChild(morseTable);
+    document.getElementById('morseTable').appendChild(morseTable);
 }
 
 generateTable();
-
-tableButton.addEventListener("click", function(){
-    if(tableState){
-        morseTable.classList.add("hidden");
-        tableState = false;
-    }
-    else{
-        morseTable.classList.remove("hidden");
-        tableState = true;
-    }
-})

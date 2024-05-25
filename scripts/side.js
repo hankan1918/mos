@@ -9,7 +9,6 @@ function hamburger(e){
         }
         e.classList.remove('closed');
 
-        side.style.display = "block";
         side.classList.add('slide');
     } else {
         for(var i = 0; i<e.children.length; i++){
@@ -18,7 +17,6 @@ function hamburger(e){
         }
         e.classList.add('closed');
         
-        side.style.display = "none";
         side.classList.remove('slide');
 
     }

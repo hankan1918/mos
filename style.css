@@ -1,6 +1,7 @@
 :root {
     --maincolor : #251852;
     --pointcolor: #EE5059;
+    --sideTransition: 0.8s;
 }
 
 *{
@@ -53,7 +54,6 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     /* background-color: var(--pointcolor); */
-    padding: 30px;
 }
 
 header{
@@ -120,7 +120,6 @@ th, td{
 }
 
 aside{
-    display: none;
     position: absolute;
     top: 0; left: 0;
     transform: translateX(-100%);
@@ -128,13 +127,25 @@ aside{
     height: 100%;
     background-color: var(--pointcolor);
     color: white;
-    padding: 5%;
-    transition: 5s;
+    padding: 6%;
+    transition: var(--sideTransition);
+}
+
+aside>*{
+    opacity: 0;
+    transition: var(--sideTransition);
+
 }
 
 .slide{
     transform: translateX(0%);
-    transition: 5s;
+    transition: var(--sideTransition);
+}
+
+.slide>*{
+    opacity: 1;
+    transition: var(--sideTransition);
+
 }
 
 .fontSizer {
